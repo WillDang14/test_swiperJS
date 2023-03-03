@@ -1,0 +1,133 @@
+<!-- 
+    How To Create Touch Slider | Make Swiper Slider Using HTML CSS & Swiper JS
+    https://www.youtube.com/watch?v=9yLxmbICrTM
+
+    https://swiperjs.com/
+
+    Chú ý: bài này khá là cơ bản và rõ ràng.
+    Có 1 số cần sửa đổi vì version Swiper là khác nhau
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Touch Slider</title>
+
+    <!-- Swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        
+        <div class="header">
+            <img src="images/menu-outline.svg" class="menu-icon">
+            <p>MEET APP</p>
+            <img src="images/bell.svg" class="bell-icon">
+        </div>
+
+        <div class="main-text">
+            <h2>Our Team</h2>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, facilis ut, exercitationem nihil animi voluptate nostrum omnis dicta autem tempora itaque ipsam numquam voluptatem velit.</small>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/profile1.jpg">
+                    
+                    <div class="info">
+                        <h3>Thomas Markle</h3>
+                        <p>Founder & CEO</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/profile2.jpg">
+
+                    <div class="info">
+                        <h3>Thomas Markle</h3>
+                        <p>Founder & CEO</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/profile3.jpg">
+
+                    <div class="info">
+                        <h3>Thomas Markle</h3>
+                        <p>Founder & CEO</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/profile4.jpg">
+
+                    <div class="info">
+                        <h3>Thomas Markle</h3>
+                        <p>Founder & CEO</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/profile5.jpg">
+
+                    <div class="info">
+                        <h3>Thomas Markle</h3>
+                        <p>Founder & CEO</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+        <!-- End Swiper -->
+
+        <div class="footer-menu">
+            <img src="images/home-outline.svg">
+            <img src="images/search-outline.svg">
+            <img src="images/person-outline.svg">
+            <img src="images/arrow-undo-outline.svg">
+        </div>
+
+
+    </div>
+
+    <!-- Swiper JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 'auto',            
+            spaceBetween: 40,
+            centeredSlides: true,
+            grabCursor: true,
+
+            loop: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            
+        });
+    </script>
+
+</body>
+
+</html>
